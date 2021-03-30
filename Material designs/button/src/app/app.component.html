@@ -19,3 +19,13 @@
   <button color="warn" mat-raised-button>Warn</button>
 </div>
 
+<h2 style="text-align:center">Button Toggle</h2>
+
+<div>
+  <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
+    <mat-button-toggle value="Angular">Angular</mat-button-toggle>
+    <mat-button-toggle value="React">React</mat-button-toggle>
+    <mat-button-toggle value="Vue">Vue</mat-button-toggle>
+  </mat-button-toggle-group>
+  {{toggleGroup.value}}
+</div>
